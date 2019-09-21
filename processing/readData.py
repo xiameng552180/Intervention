@@ -7,7 +7,7 @@ import numpy as np
 from pandas.core.frame import DataFrame
 
 if __name__ == "__main__":
-   connection = pg.connect(host='192.168.61.3', database = 'postgres', user = 'postgres')
+   connection = pg.connect(host='192.168.61.4', database = 'postgres', user = 'postgres')
    df_submission_time = pd.read_sql_query('select * from problems_multiple_choice_submission', con=connection)
    df_submission_raw = pd.read_sql_query('select * from problems_multiple_choice_optionselection', con=connection)
 
